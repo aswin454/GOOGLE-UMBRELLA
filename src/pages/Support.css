@@ -1,0 +1,171 @@
+.support-page {
+    padding: 4rem 2rem;
+}
+
+.support-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.support-title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.support-subtitle {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+}
+
+.support-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.info-card {
+    background: var(--bg-primary);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    border: 1px solid var(--border-color);
+    margin-bottom: 2rem;
+}
+
+.info-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--theme-tobacco-dark);
+}
+
+.info-item {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: flex-start;
+}
+
+.info-icon {
+    color: var(--theme-tobacco);
+    min-width: 24px;
+}
+
+.info-item h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.info-item p {
+    color: var(--text-secondary);
+    line-height: 1.4;
+    font-size: 0.95rem;
+}
+
+.faq-card {
+    background-color: white;
+    box-shadow: var(--shadow-sm);
+    border: none;
+}
+
+.faq-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.faq-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.faq-item h3 {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.form-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 2rem;
+    box-shadow: var(--shadow-md);
+}
+
+.form-card h2 {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
+}
+
+.form-group-support {
+    margin-bottom: 1.5rem;
+}
+
+.form-group-support label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.form-group-support input,
+.form-group-support textarea,
+.form-group-support select {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-secondary);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.2s;
+    color: var(--text-primary);
+}
+
+.form-group-support input:focus,
+.form-group-support textarea:focus,
+.form-group-support select:focus {
+    outline: none;
+    border-color: var(--theme-tobacco);
+    box-shadow: 0 0 0 3px rgba(152, 94, 54, 0.1);
+    background-color: white;
+}
+
+.submit-btn {
+    width: 100%;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.success-message {
+    text-align: center;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.success-message .success-icon {
+    color: var(--theme-tobacco);
+    margin-bottom: 1.5rem;
+}
+
+.success-message h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.success-message p {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 968px) {
+    .support-layout {
+        grid-template-columns: 1fr;
+    }
+}
